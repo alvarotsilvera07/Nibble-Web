@@ -6,28 +6,28 @@ const TEAM_MEMBERS: TeamMember[] = [
         id: '1',
         name: 'Alvaro Silvera',
         role: 'Co-Founder / Frontend Developer',
-        imageUrl: '/Portfolio/alvaro.png', // Temporary placeholder
+        imageUrl: '/alvaro.png', // Temporary placeholder
         socials: { portfolio: 'https://alvaro-silvera-portfolio.vercel.app/', github: 'https://github.com/alvarotsilvera07' }
     },
     {
         id: '2',
         name: 'Luka Mercado',
         role: 'Co-Founder / Frontend Developer',
-        imageUrl: '/Portfolio/luka.png', // Temporary placeholder
+        imageUrl: '/luka.png', // Temporary placeholder
         socials: { github: 'https://github.com/lukamercado2365-blip' }
     },
     {
         id: '3',
         name: 'Jonathan Oliva',
         role: 'Co-Founder / Backend Developer',
-        imageUrl: '/Portfolio/jonathan.jpg', // Temporary placeholder
+        imageUrl: '/jonathan.jpg', // Temporary placeholder
         socials: { portfolio: 'https://jonathan-oliva.github.io/JonathanOliva/', github: 'https://github.com/Jonathan-Oliva' }
     },
     {
         id: '4',
         name: 'Enzo Lopez',
         role: 'Co-Founder / Backend Developer',
-        imageUrl: '/Portfolio/enzo.jpg', // Temporary placeholder
+        imageUrl: '/enzo.jpg', // Temporary placeholder
         socials: { github: 'https://github.com/EnzoL1016' }
     }
 ];

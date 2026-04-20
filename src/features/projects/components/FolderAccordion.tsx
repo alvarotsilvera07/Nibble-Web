@@ -21,7 +21,7 @@ const PROJECTS: ProjectItem[] = [
         category: "Web Application",
         bgStyle: "bg-[#e5e5e5]",
         textStyle: "text-zinc-900",
-        image: "/Portfolio/logoAppcorregido.png",
+        image: "/logoAppcorregido.png",
         description: "Sistema de gestión de turnos deportivos especializado en fútbol y pádel.",
         url: "https://app.alapelotita.com.ar/"
     },
