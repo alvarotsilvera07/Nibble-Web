@@ -31,11 +31,11 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member }) => {
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent z-10" />
 
             {/* Content */}
-            <div className="relative z-20 w-full p-6 transform translate-y-4 transition-transform duration-500 group-hover:translate-y-0">
-                <h3 className="font-anton uppercase text-2xl md:text-3xl text-white tracking-wide mb-1">
+            <div className="relative z-20 w-full p-4 md:p-6 transform translate-y-6 transition-transform duration-500 group-hover:translate-y-0 flex flex-col justify-end">
+                <h3 className="font-anton uppercase text-xl md:text-2xl text-white tracking-wide mb-1 leading-none">
                     {member.name}
                 </h3>
-                <p className="font-oswald text-emerald-400 uppercase tracking-widest text-sm mb-4 opacity-80 group-hover:opacity-100 transition-opacity duration-300">
+                <p className="font-oswald text-emerald-400 uppercase tracking-widest text-[10px] md:text-xs mb-2 opacity-80 group-hover:opacity-100 transition-opacity duration-300 leading-tight min-h-[32px]">
                     {member.role}
                 </p>
 

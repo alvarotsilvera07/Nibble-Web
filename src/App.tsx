@@ -1,4 +1,6 @@
 import { BrowserRouter } from 'react-router-dom';
+import { useState } from 'react';
+import { Menu, X } from 'lucide-react';
 import Aurora from '@/components/animations/Aurora';
 
 import FolderAccordion from '@/features/projects/components/FolderAccordion';
@@ -6,6 +8,8 @@ import ContactSection from '@/features/contact/components/ContactSection';
 import TeamSection from '@/features/team/components/TeamSection';
 
 function App() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   return (
     <BrowserRouter>
       {/* Container must be full width and height with a dark background base */}
@@ -37,7 +41,7 @@ function App() {
                   We are
                 </h2>
 
-                <h1 className="font-anton uppercase text-[5.5rem] sm:text-7xl md:text-[10rem] lg:text-[15rem] leading-none tracking-normal text-white drop-shadow-2xl select-none text-center">
+                <h1 className="font-anton uppercase text-[4.5rem] sm:text-[5.5rem] md:text-[10rem] lg:text-[15rem] leading-none tracking-normal text-white drop-shadow-2xl select-none text-center">
                   Nibble
                 </h1>
 
@@ -81,13 +85,33 @@ function App() {
             </div>
           </a>
 
-          {/* NAV LINKS */}
+          {/* NAV LINKS DESKTOP */}
           <nav className="hidden md:flex gap-8 uppercase font-oswald text-sm md:text-base tracking-widest font-semibold text-zinc-500 pointer-events-auto">
             <a href="#projects" className="hover:text-emerald-400 transition-colors duration-300">Projects</a>
             <a href="#contact" className="hover:text-emerald-400 transition-colors duration-300">Contact Us</a>
             <a href="#team" className="hover:text-emerald-400 transition-colors duration-300">About Us</a>
           </nav>
+
+          {/* MOBILE MENU BUTTON */}
+          <button 
+            className="md:hidden pointer-events-auto text-white z-50 p-2 bg-black/20 rounded-full backdrop-blur-md border border-white/10 transition-transform active:scale-95"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
+            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
         </div>
+
+        {/* MOBILE MENU OVERLAY */}
+        {isMobileMenuOpen && (
+          <div className="fixed inset-0 z-40 bg-black/95 backdrop-blur-xl flex flex-col items-center justify-center pointer-events-auto transition-opacity duration-300">
+            <nav className="flex flex-col gap-12 text-center uppercase font-oswald text-4xl tracking-[0.2em] font-bold text-white">
+              <a href="#home" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-emerald-400 transition-colors duration-300">Home</a>
+              <a href="#projects" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-emerald-400 transition-colors duration-300">Projects</a>
+              <a href="#contact" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-emerald-400 transition-colors duration-300">Contact Us</a>
+              <a href="#team" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-emerald-400 transition-colors duration-300">About Us</a>
+            </nav>
+          </div>
+        )}
 
       </div>
     </BrowserRouter>

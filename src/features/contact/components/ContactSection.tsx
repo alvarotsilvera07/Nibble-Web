@@ -52,41 +52,41 @@ export default function ContactSection() {
     };
 
     return (
-        <section className="snap-start snap-always w-full min-h-screen py-32 flex items-center justify-center relative z-10 px-6 md:px-12" id="contact">
-            <div className="max-w-[1400px] w-full grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 relative">
+        <section className="snap-start snap-always w-full min-h-screen py-24 md:py-32 flex items-center justify-center relative z-10 px-6 md:px-12" id="contact">
+            <div className="max-w-[1400px] w-full grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-24 relative">
                 {/* Left Side: Contact Links */}
                 <div className="flex flex-col justify-center items-start lg:pl-12">
-                    <h2 className="font-outfit font-extrabold text-5xl md:text-7xl text-white uppercase tracking-tight mb-16 relative whitespace-nowrap drop-shadow-[0_5px_15px_rgba(0,0,0,0.8)]">
+                    <h2 className="font-outfit font-extrabold text-4xl sm:text-5xl md:text-7xl text-white uppercase tracking-tight mb-10 md:mb-16 relative whitespace-nowrap drop-shadow-[0_5px_15px_rgba(0,0,0,0.8)]">
                         <span className="text-emerald-400 mr-4 drop-shadow-[0_5px_15px_rgba(16,185,129,0.5)]">Contact</span>
                         <div className="absolute -left-6 md:-left-12 top-1/2 -translate-y-1/2 w-1 h-12 bg-emerald-400" />
                     </h2>
 
 
-                    <div className="flex flex-col space-y-10 w-full drop-shadow-[0_4px_10px_rgba(0,0,0,0.9)]">
-                        <a href="mailto:nibblework@gmail.com" className="group flex items-center gap-6 font-inter text-2xl md:text-3xl text-zinc-100 hover:text-emerald-400 transition-all duration-300">
-                            <div className="w-16 h-16 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-emerald-400/20 group-hover:border-emerald-400/50 group-hover:text-emerald-400 transition-all duration-300 backdrop-blur-md">
-                                <Mail size={28} strokeWidth={1.5} />
+                    <div className="flex flex-col space-y-6 md:space-y-10 w-full drop-shadow-[0_4px_10px_rgba(0,0,0,0.9)]">
+                        <a href="mailto:nibblework@gmail.com" className="group flex items-center gap-4 md:gap-6 font-inter text-lg sm:text-xl md:text-3xl text-zinc-100 hover:text-emerald-400 transition-all duration-300">
+                            <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-emerald-400/20 group-hover:border-emerald-400/50 group-hover:text-emerald-400 transition-all duration-300 backdrop-blur-md">
+                                <Mail className="w-5 h-5 md:w-7 md:h-7" strokeWidth={1.5} />
                             </div>
                             <span className="font-medium tracking-wide group-hover:-translate-y-1 transition-transform duration-300">nibblework@gmail.com</span>
                         </a>
 
-                        <a href="https://www.instagram.com/nibbledev/" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-6 font-inter text-2xl md:text-3xl text-zinc-100 hover:text-emerald-400 transition-all duration-300">
-                            <div className="w-16 h-16 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-emerald-400/20 group-hover:border-emerald-400/50 group-hover:text-emerald-400 transition-all duration-300 backdrop-blur-md">
-                                <Instagram size={28} strokeWidth={1.5} />
+                        <a href="https://www.instagram.com/nibbledev/" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-4 md:gap-6 font-inter text-lg sm:text-xl md:text-3xl text-zinc-100 hover:text-emerald-400 transition-all duration-300">
+                            <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-emerald-400/20 group-hover:border-emerald-400/50 group-hover:text-emerald-400 transition-all duration-300 backdrop-blur-md">
+                                <Instagram className="w-5 h-5 md:w-7 md:h-7" strokeWidth={1.5} />
                             </div>
                             <span className="font-medium tracking-wide group-hover:-translate-y-1 transition-transform duration-300">@nibbledev</span>
                         </a>
 
-                        <a href="https://maps.google.com/?q=Villa+Mercedes,+San+Luis,+Argentina" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-6 font-inter text-2xl md:text-3xl text-zinc-100 hover:text-emerald-400 transition-all duration-300">
-                            <div className="w-16 h-16 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-emerald-400/20 group-hover:border-emerald-400/50 group-hover:text-emerald-400 transition-all duration-300 backdrop-blur-md">
-                                <MapPin size={28} strokeWidth={1.5} />
+                        <a href="https://maps.google.com/?q=Villa+Mercedes,+San+Luis,+Argentina" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-4 md:gap-6 font-inter text-lg sm:text-xl md:text-3xl text-zinc-100 hover:text-emerald-400 transition-all duration-300">
+                            <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-emerald-400/20 group-hover:border-emerald-400/50 group-hover:text-emerald-400 transition-all duration-300 backdrop-blur-md">
+                                <MapPin className="w-5 h-5 md:w-7 md:h-7" strokeWidth={1.5} />
                             </div>
                             <span className="font-medium tracking-wide group-hover:-translate-y-1 transition-transform duration-300">Villa Mercedes, San Luis</span>
                         </a>
 
-                        <a href="https://github.com/Nibble-inc" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-6 font-inter text-2xl md:text-3xl text-zinc-100 hover:text-emerald-400 transition-all duration-300">
-                            <div className="w-16 h-16 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-emerald-400/20 group-hover:border-emerald-400/50 group-hover:text-emerald-400 transition-all duration-300 backdrop-blur-md">
-                                <Github size={28} strokeWidth={1.5} />
+                        <a href="https://github.com/Nibble-inc" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-4 md:gap-6 font-inter text-lg sm:text-xl md:text-3xl text-zinc-100 hover:text-emerald-400 transition-all duration-300">
+                            <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-emerald-400/20 group-hover:border-emerald-400/50 group-hover:text-emerald-400 transition-all duration-300 backdrop-blur-md">
+                                <Github className="w-5 h-5 md:w-7 md:h-7" strokeWidth={1.5} />
                             </div>
                             <span className="font-medium tracking-wide group-hover:-translate-y-1 transition-transform duration-300">Nibble-inc</span>
                         </a>
@@ -94,13 +94,13 @@ export default function ContactSection() {
                 </div>
 
                 {/* Right Side: Contact Form */}
-                <div className="bg-[#111111]/90 backdrop-blur-xl p-10 md:p-14 border border-white/10 rounded-2xl shadow-2xl flex flex-col justify-center relative overflow-hidden">
+                <div className="bg-[#111111]/90 backdrop-blur-xl p-6 sm:p-10 md:p-14 border border-white/10 rounded-2xl shadow-2xl flex flex-col justify-center relative overflow-hidden mt-8 lg:mt-0">
                     {/* Decorative glow */}
                     <div className="absolute -top-32 -right-32 w-64 h-64 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
 
-                    <h2 className="font-outfit font-bold text-3xl md:text-4xl text-white tracking-wide mb-10">Send us a message</h2>
+                    <h2 className="font-outfit font-bold text-2xl sm:text-3xl md:text-4xl text-white tracking-wide mb-6 md:mb-10">Send us a message</h2>
 
-                    <form onSubmit={handleSubmit} className="flex flex-col space-y-8 relative z-10">
+                    <form onSubmit={handleSubmit} className="flex flex-col space-y-6 md:space-y-8 relative z-10">
                         {/* Web3Forms Access Key */}
                         <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
 
@@ -110,7 +110,7 @@ export default function ContactSection() {
                                 id="name"
                                 type="text"
                                 name="name"
-                                placeholder="John Doe"
+                                placeholder="Juan Pérez"
                                 required
                                 autoComplete="off"
                                 className="w-full bg-black/40 border border-white/10 focus:border-emerald-400 rounded-lg text-white placeholder:text-zinc-700 font-inter text-lg px-5 py-4 outline-none transition-all duration-300 shadow-inner"
@@ -136,7 +136,7 @@ export default function ContactSection() {
                                     id="email"
                                     type="email"
                                     name="email"
-                                    placeholder="john@example.com"
+                                    placeholder="juan@ejemplo.com"
                                     required
                                     autoComplete="off"
                                     className="w-full bg-black/40 border border-white/10 focus:border-emerald-400 rounded-lg text-white placeholder:text-zinc-700 font-inter text-lg px-5 py-4 outline-none transition-all duration-300 shadow-inner"
